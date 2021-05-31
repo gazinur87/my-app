@@ -5,7 +5,7 @@
 
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
-  <version>1.0.4-SNAPSHOT</version>
+  <version>1.0.4</version>
 
   <name>my-app</name>
   <!-- FIXME change it to the project's website -->
@@ -27,7 +27,7 @@
   </dependencies>
   <scm>
       <developerConnection>scm:git:git@github.com:gazinur87/my-app.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>my-app-1.0.4</tag>
   </scm>
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
