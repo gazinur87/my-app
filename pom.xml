@@ -5,7 +5,7 @@
 
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
-  <version>5.5.11-SNAPSHOT</version>
+  <version>${revision}</version>
   <name>my-app</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
@@ -38,12 +38,12 @@
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
-        <plugin>
+        <!-- <plugin>
           <groupId>org.lorislab.maven</groupId>
           <artifactId>semver-release-maven-plugin</artifactId>
           <version>0.7.0</version>
-        </plugin>  
-        <plugin>
+        </plugin>   -->
+        <plugin> 
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-release-plugin</artifactId>
             <version>2.5.3</version>
@@ -65,7 +65,7 @@
             </execution>
          </executions>
         </plugin>
-        <plugin>
+        <!-- <plugin>
               <groupId>org.codehaus.mojo</groupId>
               <artifactId>flatten-maven-plugin</artifactId>
               <version>1.1.0</version>
@@ -89,7 +89,7 @@
                   </goals>
                 </execution>
               </executions>
-            </plugin>
+            </plugin>  -->
         <plugin>
             <groupId>com.amashchenko.maven.plugin</groupId>
             <artifactId>gitflow-maven-plugin</artifactId>
