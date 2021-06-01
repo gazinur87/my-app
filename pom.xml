@@ -5,7 +5,7 @@
 
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
-  <version>1.0.9-SNAPSHOT</version>
+  <version>1.0.10-SNAPSHOT</version>
 
   <name>my-app</name>
   <!-- FIXME change it to the project's website -->
@@ -32,6 +32,19 @@
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
+        <plugin>
+        <groupId>com.outbrain.swinfra</groupId>
+        <artifactId>ci-friendly-flatten-maven-plugin</artifactId>
+        <version>1.0.8</version>
+         <executions>
+          <execution>
+              <goals>
+                <goal>clean</goal>
+                <goal>flatten</goal>
+              </goals>
+            </execution>
+         </executions>
+        </plugin>
         <plugin>
             <groupId>com.amashchenko.maven.plugin</groupId>
             <artifactId>gitflow-maven-plugin</artifactId>
