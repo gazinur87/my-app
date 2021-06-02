@@ -1,0 +1,9 @@
+stages:
+  - build
+
+build:
+  stage: build
+  image: maven
+  script:
+    - mvn ci-friendly-flatten:version
+    - mvn -Dtag="$(cat revision.txt)" scm:tag
